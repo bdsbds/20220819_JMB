@@ -1,0 +1,22 @@
+# model: choose among
+# - "ode0": ODE system expressed in terms of (S, \bar\beta, I), first mode of Schrödinger operator
+# - "odeK": ODE system (S_k, lambda, I) k=1...K, with the first K modes of Schrödinger operator
+#    parameter: K
+# - "pde": PDE system with drift and diffusion
+#    parameter: n (nomber of discretization points in R^+)
+#               the space step deltaA = C / sqrt(n) so that the range [0, C sqrt(n)] represents the half line
+# - deprecated: "pde_old" and "odeK_old"
+model: 'odeK'
+modelparams:
+  beta0: 0.01
+  beta1: 0.18
+  mu0: 5.e-3
+  sigma: 0.4 # 1e-6
+  gamma: 0.25 # 0.08
+simulparams:
+  I_init: 3e-5 # 1e-3
+  lambda_init: 1.
+  n: 500
+  K: 7
+  endTimeDays: 500
+  deltaT: 0.01
