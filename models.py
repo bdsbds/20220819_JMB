@@ -1,8 +1,6 @@
 import numpy as np
 from scipy.integrate import odeint
 from functools import partial
-import scipy.optimize as optimize
-import pygmo as pg
 import os
 
 
