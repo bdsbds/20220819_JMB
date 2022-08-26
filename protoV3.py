@@ -5,7 +5,7 @@ import numpy as np
 import yaml
 import scipy.sparse as sp
 from fractions import Fraction
-from visualisation import *
+from models import *
 from scipy import special
 import os
 
