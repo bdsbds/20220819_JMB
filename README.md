@@ -1,2 +1,3 @@
 # 20220819_JMB
-high order model in JMB / numerical experiments
+- Illustrations of Section 4
+- High order model in JMB / numerical experiments (Section 6)
