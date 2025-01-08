@@ -1,6 +1,8 @@
 import math
 import datetime
-
+import matplotlib.pyplot as plt
+import pandas as pd
+import pygmo
 import numpy as np
 import yaml
 import scipy.sparse as sp
@@ -8,8 +10,6 @@ from fractions import Fraction
 from models import *
 from scipy import special
 import os
-
-os.chdir('C:\Code\GEOBIOMICS\Joshua_JMB')
 
 class setParamsV3:
 	def __init__(self, modelParams, simulParams, model):
